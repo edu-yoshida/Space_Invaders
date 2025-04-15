@@ -7,6 +7,7 @@ const larguraTotal = colunas * (larguraInimigo + espacamentoHorizontal) - espaca
 const posicaoHorizontal = (game.offsetWidth - larguraTotal) / 2;
 
 const formacao = [];
+i = 1
 
 for (let col = 0; col < colunas; col++) {
   const coluna = document.createElement("div");
@@ -19,6 +20,8 @@ for (let col = 0; col < colunas; col++) {
   for (let row = 0; row < linhas; row++) {
     const inimigo = document.createElement("div");
     inimigo.classList.add("inimigo");
+    inimigo.classList.add(`${i}`);
+    i += 1
     coluna.appendChild(inimigo);
   }
 
@@ -51,4 +54,4 @@ function moveColunas() {
   }
 }
 
-setInterval(moveColunas, 50);
+// setInterval(moveColunas, 50);
