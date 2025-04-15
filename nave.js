@@ -3,7 +3,7 @@ const ship = document.getElementById("nave");
 const game = document.getElementById("game");
 
 // Referências de posição
-let posiçãoNave = game.offsetWidth / 2 - ship.offsetWidth / 2;
+let posiçãoNave = game.offsetWidth / 2 - ship.offsetWidth;
 let localNave = game.offsetHeight - ship.offsetHeight - 30;
 
 // Preparação para receber movimento
@@ -30,7 +30,7 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("keyup", (event) => {
     if (event.key === "a") esquerda = false;
     if (event.key === "d") direita = false;
-    if (event.key === "w") baixo = false;
+    if (event.key === "w") baixo = false;   
     if (event.key === "s") cima = false;
 });
 

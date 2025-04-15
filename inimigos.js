@@ -12,7 +12,6 @@ i = 1
 for (let col = 0; col < colunas; col++) {
   const coluna = document.createElement("div");
   coluna.classList.add("coluna");
-
   const posicaoX = posicaoHorizontal + col * (larguraInimigo + espacamentoHorizontal);
   coluna.style.left = `${posicaoX}px`;
   coluna.style.top = `50px`;
