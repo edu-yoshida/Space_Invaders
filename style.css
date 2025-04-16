@@ -22,6 +22,7 @@ body {
     background-color: lime;
     position: absolute;
     left: 50%;
+    background-image: url();
 }
 
 .coluna {
