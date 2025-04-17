@@ -37,4 +37,9 @@ body {
     height: 70px;
     background-color: aqua;
 }
+.projetil{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
   

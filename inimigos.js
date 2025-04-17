@@ -59,4 +59,4 @@ function moveColunas() {
   }
 }
 
-setInterval(moveColunas, 50);
+// setInterval(moveColunas, 50); 
